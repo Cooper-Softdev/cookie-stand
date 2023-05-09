@@ -24,11 +24,10 @@ let seattle = {
 
 seattle.generateCustomersPerHourArr();
 seattle.calculateCookiesPerHourArr();
-console.log(seattle.generateCustomersPerHourArr);
+console.log(seattle.customersPerHourArr);
 console.log(seattle.calculateCookiesPerHourArr);
-console.log(seattle.totalCookies);
 
-let Tokyo = {
+let tokyo = {
   minCustomers: 3,
   maxCustomers: 24,
   avgCookiesPerSale: 1.2,
@@ -52,13 +51,12 @@ let Tokyo = {
   }
 };
 
-Tokyo.generateCustomersPerHourArr();
-Tokyo.calculateCookiesPerHourArr();
-console.log(Tokyo.generateCustomersPerHourArr);
-console.log(Tokyo.calculateCookiesPerHourArr);
-console.log(Yokyo.totalCookies);
+tokyo.generateCustomersPerHourArr();
+tokyo.calculateCookiesPerHourArr();
+console.log(tokyo.customersPerHourArr);
+console.log(tokyo.calculateCookiesPerHourArr);
 
-let Dubai = {
+let dubai = {
   minCustomers: 11,
   maxCustomers: 38,
   avgCookiesPerSale: 3.7,
@@ -82,13 +80,12 @@ let Dubai = {
   }
 };
 
-Dubai.generateCustomersPerHourArr();
-Dubai.calculateCookiesPerHourArr();
-console.log(Dubai.generateCustomersPerHourArr);
-console.log(Dubai.calculateCookiesPerHourArr);
-console.log(Dubai.totalCookies);
+dubai.generateCustomersPerHourArr();
+dubai.calculateCookiesPerHourArr();
+console.log(dubai.customersPerHourArr);
+console.log(dubai.calculateCookiesPerHourArr);
 
-let Paris = {
+let paris = {
   minCustomers: 20,
   maxCustomers: 38,
   avgCookiesPerSale: 2.3,
@@ -112,13 +109,12 @@ let Paris = {
   }
 };
 
-Paris.generateCustomersPerHourArr();
-Paris.calculateCookiesPerHourArr();
-console.log(Paris.generateCustomersPerHourArr);
-console.log(Paris.calculateCookiesPerHourArr);
-console.log(Paris.totalCookies);
+paris.generateCustomersPerHourArr();
+paris.calculateCookiesPerHourArr();
+console.log(paris.customersPerHourArr);
+console.log(paris.calculateCookiesPerHourArr);
 
-let Lima = {
+let lima = {
   minCustomers: 2,
   maxCustomers: 16,
   avgCookiesPerSale: 2.3,
@@ -142,9 +138,8 @@ let Lima = {
   }
 };
 
-Lima.generateCustomersPerHourArr();
-Lima.calculateCookiesPerHourArr();
-console.log(Lima.generateCustomersPerHourArr);
-console.log(Lima.calculateCookiesPerHourArr);
-console.log(Lima.totalCookies);
+lima.generateCustomersPerHourArr();
+lima.calculateCookiesPerHourArr();
+console.log(lima.customersPerHourArr);
+console.log(lima.calculateCookiesPerHourArr);
 
