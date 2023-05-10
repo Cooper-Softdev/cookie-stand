@@ -37,27 +37,27 @@ let tokyo = new Store('Tokyo', 3, 24, 1.2);
 let dubai = new Store('Dubai', 11, 38, 3.7);
 let paris = new Store('Paris', 20, 38, 2.3);
 let lima = new Store('Lima', 2, 16, 2.3);
-
+let miami = new Store('Miami', 54, 85, 9.2);
 
 
 Store.prototype.render = function () {
   this.calculateCookiesPerHourArr();
-  
+
   let trElement = document.createElement('tr');
   let thElement = document.createElement('th');
   thElement.textContent = this.name;
   trElement.appendChild(thElement);
-  
+
   for(let i = 0; i < this.cookiesPerHourArr.length; i++) {
     let tdElement = document.createElement('td');
     tdElement.textContent = this.cookiesPerHourArr[i];
     trElement.appendChild(tdElement);
   }
-  
+
   let totalElement = document.createElement('td');
   totalElement.textContent = this.totalCookies;
   trElement.appendChild(totalElement);
-  
+
   storeTable.appendChild(trElement);
 };
 
@@ -109,7 +109,7 @@ function renderFooter() {
 
 renderHeader();
 
-let stores = [seattle, tokyo, dubai, paris, lima];
+let stores = [seattle, tokyo, dubai, paris, lima, miami];
 for (let i = 0; i < stores.length; i++) {
   stores[i].render();
 }
