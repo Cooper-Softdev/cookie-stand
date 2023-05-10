@@ -74,7 +74,7 @@ function renderHeader() {
   }
 
   let totalElement = document.createElement('th');
-  totalElement.textContent = 'CoB';
+  totalElement.textContent = 'Daily Location Total';
   trElement.appendChild(totalElement);
 
   storeTable.appendChild(trElement);
