@@ -13,7 +13,8 @@ I build an app with a direct and powerful purpose. It does all of the things tha
 
 ### Lighthouse Accessibility Report Score
 
-*placeholder*
+[Uploading Screenshot 2023-05-10 at 10.30.18 PM.png…]()
+
 
 ### Reflections and Comments
 
