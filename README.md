@@ -13,8 +13,8 @@ I build an app with a direct and powerful purpose. It does all of the things tha
 
 ### Lighthouse Accessibility Report Score
 
-<img width="1946" alt="Lighthouse Report" src="https://github.com/Cooper-Softdev/cookie-stand/assets/73309872/56183fff-9df8-43b9-863f-1f40752329f0">
 
+<img width="1281" alt="Screenshot 2023-05-11 at 8 01 55 PM" src="https://github.com/Cooper-Softdev/cookie-stand/assets/73309872/3b42581a-0da0-4ed3-b701-33d918a9968c">
 
 
 
