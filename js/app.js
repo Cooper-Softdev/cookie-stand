@@ -1,6 +1,35 @@
 
 let storeTable = document.getElementById('storeDailyTable');
 
+let newStoreForm = document.getElementById('storeInputForm');
+
+
+function addStore(event) {
+  event.preventDefault();
+
+  let name = event.target.storeName.value;
+  let minCustomers = parseInt(event.target.minCustomers.value);
+  let maxCustomers = parseInt(event.target.maxCustomers.value);
+  let avgCookiesPerSale = parseFloat(event.target.avgCookiesPerSale.value);
+
+  let newStore = new Store(name, minCustomers, maxCustomers, avgCookiesPerSale);
+  newStore.render();
+  stores.push(newStore);
+
+  // More of the code that keeps breaking the app
+  // localStorage.setItem('stores', JSON.stringify(stores));
+
+  storeTable.innerHTML = '';
+  renderHeader();
+  for (let i = 0; i < stores.length; i++) {
+    stores[i].render();
+  }
+  renderFooter();
+
+  event.target.reset();
+}
+
+
 let hours = ['6am', '7am', '8am','9am','10am','11am','12pm','1pm','2pm','3pm','4pm','5pm','6pm', '7pm', '8pm'];
 
 function Store(name, minCustomers, maxCustomers, avgCookiesPerSale) {
@@ -107,6 +136,19 @@ function renderFooter() {
   return[grandTotal];
 }
 
+//* I can't make this thing work!*//
+
+// if (localStorage.getItem('stores')) {
+//   let savedStores = JSON.parse(localStorage.getItem('stores'));
+
+//   for (let i = 0; i < savedStores.length; i++) {
+//     let savedStore = savedStores[i];
+//     let store = new Store(savedStore.name, savedStore.minCustomers, savedStore.maxCustomers, savedStore.avgCookiesPerSale);
+//     store.render();
+//     stores.push(store);
+//   }
+// }
+
 renderHeader();
 
 let stores = [seattle, tokyo, dubai, paris, lima, miami];
@@ -115,3 +157,5 @@ for (let i = 0; i < stores.length; i++) {
 }
 
 renderFooter();
+
+newStoreForm.addEventListener('submit', addStore);
