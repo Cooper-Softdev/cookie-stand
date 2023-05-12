@@ -5,10 +5,32 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Salmon Cookie sales</title>
+  <link rel="stylesheet" href="css/sales.css">
 </head>
 <body>
+  <header>
+    <h1>Daily Sales Data for Salmon Cookies Inc.</h1>
+  </header>
+  <div class="tableBox">
   <section id="storeDailyTable"></section>
+  </div>
+  <div class="storeInput">
+    <fieldset>
+      <legend>Add New Store</legend>
+      <form id="storeInputForm">
+        <label for="storeName">Store Name</label><br>
+        <input type="text" id="storeName" name="storeName" required><br><br>
+        <label for="minCustomers">Min Customers</label><br>
+        <input type="number" id="minCustomers" name="minCustomers" required><br><br>
+        <label for="maxCustomers">Max Customers</label><br>
+        <input type="number" id="maxCustomers" name="maxCustomers" required><br><br>
+        <label for="avgCookiesPerSale">Average Cookies Per Sale</label><br>
+        <input type="number" id="avgCookiesPerSale" name="avgCookiesPerSale" step="any" required><br><br>
+        <input type="submit" value="Add Store">
+      </form>
+    </fieldset>
+  </div>
   <script src="js/app.js"></script>
-  <input type="button" onclick="window.location.href='index.html';" value="I'm ready leave!">
+  <input type="exitButton" onclick="window.location.href='index.html';" value="I'm ready leave!">
 </body>
 </html>
