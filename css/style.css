@@ -70,6 +70,17 @@ main div h2 {
   background-color: aquamarine;
 }
 
+main div .localeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+div .locations {
+  display: flex;
+  flex-direction: column;
+}
+
 main .review {
   font-family: 'East Sea Dokdo';
   font-size: 40px;
